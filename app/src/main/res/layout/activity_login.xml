@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rpino.geopost.LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textSize="30dp"
+        android:id="@+id/textView1"
+        android:textColor="@color/colorAccent"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/username"
+        android:layout_below="@+id/textView1"
+        android:inputType="textAutoComplete"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:textSize="30dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/username"
+        android:textColor="@color/colorAccent"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/password"
+        android:layout_below="@+id/textView2"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="login"
+        android:id="@+id/button"
+        android:layout_below="@+id/password"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="checkLogin"
+        />
+
+</RelativeLayout>
